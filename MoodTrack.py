@@ -5,13 +5,13 @@ note = input("Any notes? ")
 with open ('moodtrack.csv', mode='w', newline='') as csv_file:
     csv_writer = csv.writer(csv_file, delimiter=" ")
     csv_writer.writerow([date, mood_scale, note])
-print("YOur mood has been logged!")
+print("Your mood has been logged!")
 if (mood_scale<=4):
-    print("Im so sorry you had a bad day. The next day will be better!! <3")
-elif(mood_scale<=7):
-    print("Nothing too special? Its okay every new day comes with its own advetures!")
+    print("I am so sorry you had a bad day. The next day will be better!!")
+elif(mood_scale<=6):
+    print("Nothing too special? It's okay every new day comes with its own adventures!")
 elif(mood_scale<=10):
-    print("Im glad you had an amazing day!! The next will be even better")
+    print("I am glad you had an amazing day!! The next will be even more better")
 else:
     print("Invalid Input")
 pulltherecords = input("Do you want to pull the records? (Y or N)")
